@@ -1,4 +1,4 @@
-package variablesyoperadores;
+package condiciones;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class ClausulaSwitch {
 			break;
 		case "o": System.out.println("Letra o");
 			break;
-		case "u": System.out.println("Letra u");
+		case "u": System.out.println("Letra    u");
 			break;
 		default:
 			System.out.println("Consonante "+letra);
