@@ -8,6 +8,7 @@ public class ClausulaSwitch {
 		Scanner numero= new Scanner(System.in) ;
 		String letra;
 		letra= numero.nextLine();
+		
 		switch(letra)
 		{
 		case "a": System.out.println("Letra a");
@@ -24,7 +25,7 @@ public class ClausulaSwitch {
 			System.out.println("Consonante "+letra);
 		
 		}
-
+		numero.close();
 	}
 
 }
