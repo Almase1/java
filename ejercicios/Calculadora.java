@@ -16,7 +16,7 @@ public class Calculadora {
 		// Bucle hasta que pulsemos una "F" en operacion
 		Scanner entrada = new Scanner(System.in);
 		String operacion;
-
+			
 		do {
 			operacion = entrada.next();
 			if (operacion.equals("F")) {
