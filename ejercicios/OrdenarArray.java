@@ -15,7 +15,8 @@ public class OrdenarArray {
 					array1[x] = aux;
 				}
 			}
-		}
+		}		
+		
 		
 		//Pintar el array
 		for (int posicion=0;posicion<array1.length;posicion++)
