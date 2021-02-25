@@ -10,22 +10,23 @@ public class Vocales {
 		//Pintar solo las consonantes
 		//Esto es una prueba --> st s n prb
 		
-		String cadena= new String();
+		
 				
 		Scanner teclado= new Scanner(System.in) ;
 		String frase;
 		frase= teclado.nextLine();
 		
 		for (int posicion=0;posicion<frase.length();posicion++) {
-			if (frase.charAt(posicion) =='a' ||frase.charAt(posicion)=='e'  ||frase.charAt(posicion)=='i' ||frase.charAt(posicion)=='o' ||frase.charAt(posicion)=='u')
+			//Poner la letra en una variable
+			char letra=frase.charAt(posicion);			
+			
+			if (letra =='a' || letra=='e'  ||letra=='i' ||letra=='o' || letra=='u')
 			{
 				continue;
 			}
-			System.out.print(frase.charAt(posicion));
+			System.out.print(letra);
 		}
-		
-		
-		
+		teclado.close();
 	}
 
 }
