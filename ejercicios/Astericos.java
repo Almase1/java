@@ -11,6 +11,7 @@ public class Astericos {
 		Scanner entrada = new Scanner(System.in);
 		String frase;
 		frase = entrada.nextLine();
+		String caracter=entrada.next();
 		
 		//averiguar longitud
 		
@@ -19,7 +20,7 @@ public class Astericos {
 		
 		//Pintar asteriscos
 		for (int i = 0; i < longitud; i++) {
-			System.out.print("*");
+			System.out.print(caracter);
 		}
 
 	}
