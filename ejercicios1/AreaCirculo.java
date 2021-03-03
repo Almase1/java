@@ -1,13 +1,15 @@
 package ejercicios1;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class AreaCirculo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
 		
+		Scanner scan = new Scanner(System.in);
+		scan.useLocale(Locale.ENGLISH);
 		System.out.println("Escribe el radio del círculo:");
 		double radio = scan.nextDouble();
 		
