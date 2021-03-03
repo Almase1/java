@@ -21,9 +21,10 @@ public class Vehiculo {
 		tipo = 0;
 		pvp = 0;
 		cv = 0;
-		bastidor = "Sin bastidor";
+		bastidor = "Sin bastidor";		
 	}
 
+	
 	Vehiculo(int ruedas) {
 		if (ruedas < 0 || ruedas > 50) {
 			this.ruedas = 0;
