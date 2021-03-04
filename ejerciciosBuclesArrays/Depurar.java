@@ -5,7 +5,7 @@ public class Depurar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int num=0;
-		String cadena="esto es una prrueba";
+		String cadena="esto es una prueba";
 		int[] array=new int[5];
 		
 		num=10;
@@ -25,9 +25,6 @@ public class Depurar {
 		{	
 			System.out.println(array[contador]);
 		}
-			
-			
-
 	}
 
 }
