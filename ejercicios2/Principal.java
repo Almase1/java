@@ -14,7 +14,11 @@ public class Principal {
 		//Segundo Ejercicio
 		t.media();
 		//TercerEjercicio*/
-		t.concatenarTablas();
+		//t.concatenarTablas();
+		
+		//CuartoEjercicio
+		TablasMultidimension array1=new TablasMultidimension();
+		array1.multiDimension();
 	}
 
 }
