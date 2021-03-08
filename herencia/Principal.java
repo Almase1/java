@@ -24,7 +24,17 @@ public class Principal {
     	ex1.setResponsable("Pedro");
     	ex1.setTipo("Z");
     	ex1.verdatos();		
-    			
+    		
+    	
+    	Multa m1=new Multa();
+    	m1.setCodexpediente(90000);
+    	m1.setDescripcion("fmlsfklafkldsjaklfjflka");
+    	m1.setTipo("X");
+    	m1.setResponsable("pepito");
+    	m1.setImporte(1000);
+    	
+    	m1.verdatos();
+    	m1.getImporte();
     
    
     
