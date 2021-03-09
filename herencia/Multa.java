@@ -29,7 +29,7 @@ public class Multa extends Expediente{
 	@Override
 	public String toString() {
 		
-		return  getDescripcion()+" y mi responsable es "+getResponsable();
+		return  getDescripcion();
 		
 	}
      	

@@ -24,7 +24,7 @@ public class Principal {
 		 * m1.setResponsable("pepito"); m1.setImporte(1000);
 		 * 
 		 * m1.verdatos(); m1.getImporte();
-		 */
+		 
 		Multa_Trafico mt1 = new Multa_Trafico(1000, "B");
 		mt1.setDescripcion("Saltar un ceda el paso");
 		mt1.setResponsable("conductor");
@@ -53,6 +53,59 @@ public class Principal {
 		System.out.println(multaMayorImporte(multa1, multa2));
 		//System.out.println(conocerTipo(mt1));
 		System.out.println(multa1);
+		
+		//Creo dos expediente
+		Expediente ex1=new Expediente(10, "A");
+		Expediente ex2=new Expediente(20, "A");
+		//Creo un array de Expediente de 2 posiciones
+		Expediente ex[]=new Expediente[2];
+		//Cargo el array
+		ex[0]=ex1;
+		ex[1]=ex2;
+		ex[0].setDescripcion("Priemro");
+		ex[1].setDescripcion("Segundo");
+		m1(ex);
+		*/
+		//Crear un array de multas de 50 posiciones
+		
+		
+		Multa multas[]=new Multa[50];
+		
+		//Relleno con descripcion e importe
+		for (int i=0;i<multas.length;i++) {		
+			multas[i]=new Multa(i, "A");
+			multas[i].setDescripcion("Descripion "+i);
+			multas[i].setImporte((Math.random()*1000+25));
+		}
+		
+		System.out.println( calcularMayor(multas));		
+		
+		Multa multa1=new Multa(10, "A");
+		multa1.setImporte(1000);
+		multa1.setDescripcion("Mi primera multa");
+		multa1.setResponsable("Alberto");
+		Multa multa2=new Multa(20, "A");
+		multa2.setImporte(2000);
+		Utilidades util1=new Utilidades();
+		System.out.println(util1.multaMayorImporte(multa1, multa2));
+		//System.out.println(conocerTipo(mt1));
+		System.out.println(multa1);
+		
+		
+	}
+	
+	public static String calcularMayor(Multa[] m1) {
+		double mayor=0;
+		int codigo=0;
+		for(int x=0;x<m1.length;x++)
+		{
+			if (m1[x].getImporte()>mayor)
+			{
+				mayor=m1[x].getImporte();
+				codigo=m1[x].getCodexpediente();
+			}
+		}
+		return mayor+" "+codigo;
 	}
 
 	public static String saberTipo(Expediente c1) {
@@ -78,17 +131,14 @@ public class Principal {
 	
 	//Object
 
-	public static String multaMayorImporte(Multa m1, Multa m2) {
-		String cadena;
-		if (m1.getImporte() > m2.getImporte()) {
-			cadena = "El importe mayor es el de la multa: " + m1.getCodexpediente();
+	
 
-		} else if (m1.getImporte() < m2.getImporte()) {
-			cadena = "El importe mayor es el de la multa: " + m2.getCodexpediente();
-		} else {
-			cadena = "Ambas multas tienen el mismo importe";
+	public static String m1(Expediente[] e1)
+	{
+		for (int x=0;x<e1.length;x++)
+		{
+			System.out.println(e1[x].getDescripcion());
 		}
-		return cadena;
+		return "x";
 	}
-
 }
