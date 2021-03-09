@@ -25,6 +25,13 @@ public class Multa extends Expediente{
 		//super.verdatos();
 		System.out.println("El importe de la multa del expediente:"+getCodexpediente()+" es:"+getImporte());
 	}
+
+	@Override
+	public String toString() {
+		
+		return  getDescripcion()+" y mi responsable es "+getResponsable();
+		
+	}
 	
 	
 	
