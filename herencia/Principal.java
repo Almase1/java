@@ -17,8 +17,8 @@ public class Principal {
     System.out.println(h1.getCod());
     System.out.println(h1.getPaga_semanal());
     System.out.println(h1.paga_mensual());
-*/
-    	Expediente ex1=new Expediente();
+
+    	Expediente ex1=new Expediente(10, "A");
     	ex1.setCodexpediente(100000);
     	ex1.setDescripcion("Desripcionvckls ajnmkfjdkflasl");
     	ex1.setResponsable("Pedro");
@@ -26,7 +26,7 @@ public class Principal {
     	ex1.verdatos();		
     		
     	
-    	Multa m1=new Multa();
+    	Multa m1=new Multa(20,"B");
     	m1.setCodexpediente(90000);
     	m1.setDescripcion("fmlsfklafkldsjaklfjflka");
     	m1.setTipo("X");
@@ -35,7 +35,22 @@ public class Principal {
     	
     	m1.verdatos();
     	m1.getImporte();
-    
+*/    
+    	Multa_Trafico mt1=new Multa_Trafico(1000, "B");
+    	mt1.setDescripcion("Saltar un ceda el paso");
+    	mt1.setResponsable("conductor");
+    	mt1.setMatricula("M111111");
+    	mt1.verdatos();
+    			
+
+    	MultaCovid mt2=new MultaCovid(1000, "B");
+    	mt2.setDescripcion("Saltar un ceda el paso");
+    	mt2.setResponsable("conductor");
+    	mt2.setMascarilla(false);
+    	mt2.setFecha("10/10/2020");
+    	mt2.verdatos();
+    	
+    	
    
     
     }

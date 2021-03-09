@@ -6,6 +6,18 @@ public class Expediente {
 	private String responsable;
 	private String descripcion;
 
+	public Expediente(int codexpediente, String tipo) {
+	   
+		setCodexpediente(codexpediente);
+		setTipo(tipo);
+		
+	}
+	
+	public String tipoClase() {
+		return "Expediente";
+	}
+	
+	
 	public int getCodexpediente() {
 		return codexpediente;
 	}
