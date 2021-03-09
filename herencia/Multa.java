@@ -23,7 +23,7 @@ public class Multa extends Expediente{
 	public void verdatos() {
 		// TODO Auto-generated method stub
 		//super.verdatos();
-		System.out.println("El importe de la multa del expediente:"+getCodexpediente()+" es:"+getImporte());
+		System.out.println("  El importe de la multa del expediente:"+getCodexpediente()+" es:"+getImporte());
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class Multa extends Expediente{
 		return  getDescripcion()+" y mi responsable es "+getResponsable();
 		
 	}
-	
+     	
 	
 	
 	
