@@ -12,14 +12,21 @@ public class Coche implements Int_Vehiculo{
 
 	@Override
 	public String acelerar(int velocidad) {
-		// TODO Auto-generated method stub
-		return null;
+		if (velocidad > VELOCIDAD_MAXIMA)
+		{
+			return "Vas a " +velocidad+" kilómetros por hora y por encima de la permitida que es "+VELOCIDAD_MAXIMA;
+		}
+		else
+		{
+			return "Vas a " +velocidad+" kilómetros por hora";
+		}
+		
 	}
 
 	@Override
 	public Double calcularPrecio(int pvp) {
 		// TODO Auto-generated method stub
-		return null;
+		return (double) pvp+(pvp*21/100);
 	}
 
 }
