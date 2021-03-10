@@ -5,13 +5,13 @@ public class Prueba implements Libreria {
 	@Override
 	public String responsable() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Programador Pepito";
 	}
 
 	@Override
 	public int horas_trabajo() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1000;
 	}
 
 }
