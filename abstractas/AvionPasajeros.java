@@ -40,7 +40,18 @@ public class AvionPasajeros extends Avion {
 		return "Ess un avion "+getModelo()+"  con un numero de pasajeros de "+getNum_pasajeros(); 
 	}
 	
-	
+	@Override
+	public boolean equals(Object obj) {
+		// Convertimos obj a AvionPasajeros
+		AvionPasajeros Comparado = (AvionPasajeros) obj;
+
+		if (this.getNum_pasajeros() == Comparado.getNum_pasajeros() && this.getModelo() == Comparado.getModelo()) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	
 	
 	
