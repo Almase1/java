@@ -27,6 +27,15 @@ public class Principal {
 		System.out.println(ham1.sonido());
 		System.out.println(ham1.chip());
 		
+		//Objeto de la clase Rapaz
+		Rapaz rapaz1=new Rapaz();
+		System.out.println(rapaz1.sonido());
+		System.out.println(rapaz1.chip());
+		
+		//OBjeto de la clase periquito		
+		Periquito peri1=new Periquito();
+		System.out.println(peri1.sonido());
+		System.out.println(peri1.chip());
 	}
 
 }
