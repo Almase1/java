@@ -2,7 +2,7 @@ package interfaz2;
 
 import java.util.Scanner;
 
-public class Dados implements Juego {
+public class Dados extends Mensaje implements Juego,Ficheros {
 
 	private String jugador1;
 	private String jugador2;
@@ -71,6 +71,12 @@ public class Dados implements Juego {
 	 */
 	public void setJugador2(String jugador2) {
 		this.jugador2 = jugador2;
+	}
+
+	@Override
+	public void escribirResultado() {
+		System.out.println("He escrito el resultado en un fichero");
+		
 	}
 
 }

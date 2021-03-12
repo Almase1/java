@@ -2,7 +2,7 @@ package interfaz2;
 
 import java.util.Scanner;
 
-public class AdiviniarNumero implements Juego {
+public class AdiviniarNumero implements Juego,Ficheros{
     
 	private int numero=0;
 	private int num_tiradas=0;
@@ -64,6 +64,12 @@ public class AdiviniarNumero implements Juego {
 
 	public void setNum_tiradas(int num_tiradas) {
 		this.num_tiradas = num_tiradas;
+	}
+
+	@Override
+	public void escribirResultado() {
+		System.out.println("He guardado el resultado");
+		
 	}
 
 }
